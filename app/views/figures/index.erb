@@ -1,0 +1,9 @@
+<h1>All your figures:</h1>
+<ul>
+  <% Figure.all.each do |figure| %>
+    <li><a href="/figures/<%= figure.id %>">Name: <%= figure.name %></a></li>
+  <% end %>
+</ul>
+
+<a href="/figures/new"><input type="button" name="name" value="Create new Figure"></a>
+<a href="/"><input type="button" name="name" value="Back to Main Page"></a>
